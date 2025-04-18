@@ -1,0 +1,152 @@
+{
+  "commands": [
+    {
+      "name": "1",
+      "type": "action",
+      "trigger": "textCommand",
+      "actions": [
+        {
+          "name": "Send Message",
+          "file": "sendmessage.js",
+          "data": {
+            "name": "Send Message",
+            "messageContent": "Hello World!",
+            "actionRows": [
+              {
+                "type": "buttons",
+                "data": {
+                  "buttons": [
+                    {
+                      "type": "normal",
+                      "data": {
+                        "label": "nadaj role",
+                        "color": "Default",
+                        "actions": [
+                          {
+                            "name": "Add Role",
+                            "file": "addRole.js",
+                            "data": {
+                              "name": "Add Role",
+                              "member": {
+                                "type": "author",
+                                "value": ""
+                              },
+                              "role": {
+                                "type": "id",
+                                "value": "1356979003063271564"
+                              },
+                              "reason": "chuj go tam wie"
+                            },
+                            "id": 1744685684397
+                          }
+                        ],
+                        "disabled": false,
+                        "emojiName": "",
+                        "emojiID": "",
+                        "isEmojiAnimated": false,
+                        "type": {
+                          "type": "temporary",
+                          "value": "60"
+                        },
+                        "styles_emoji": [
+                          {
+                            "type": "styles_emoji"
+                          }
+                        ],
+                        "usage": [
+                          {
+                            "type": "usage"
+                          }
+                        ],
+                        "premium_button": []
+                      }
+                    }
+                  ],
+                  "storeInteractionAs": {
+                    "type": "temporary",
+                    "value": "123"
+                  },
+                  "storeInteractionAuthorAs": {
+                    "type": "temporary",
+                    "value": "123"
+                  }
+                }
+              }
+            ],
+            "embeds": [],
+            "channel": {
+              "type": "command",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "storeAs": {
+              "value": "",
+              "type": "temporary"
+            },
+            "options": [
+              {
+                "type": "options"
+              }
+            ]
+          },
+          "id": 1744684319548
+        },
+        {
+          "name": "Add Reaction",
+          "file": "addReaction.js",
+          "data": {
+            "name": "Add Reaction",
+            "message": {
+              "type": "commandMessage",
+              "value": ""
+            },
+            "emojiName": "😛",
+            "emojiID": ""
+          },
+          "id": 1744684853795
+        }
+      ],
+      "customId": 1744683921212,
+      "boundary": {
+        "worksIn": "guild",
+        "limits": []
+      },
+      "parameters": [],
+      "description": "komenda pomocy",
+      "folder": [],
+      "aliases": [
+        "1"
+      ],
+      "goodies": {
+        "actionType": "text",
+        "variables": {
+          "temporary": [],
+          "global": [
+            [],
+            []
+          ],
+          "server": [
+            [],
+            []
+          ],
+          "commandVars": [
+            ""
+          ],
+          "thisServer": [],
+          "thisGlobal": []
+        }
+      }
+    }
+  ],
+  "prjSrc": "C:\\Users\\Emil Zalasa\\Desktop\\Bot_dc",
+  "btk": "MTI5MDA5NjMzMDExMDE0NDU3NQ.G_K0pN.Jxn7hG6UsLsLsxjfiBk5CPZeGz5pwHCle8RTMI",
+  "prefix": "=",
+  "name": "ErykSkyPl bot",
+  "color": "rgb(0,0,0)",
+  "structureType": 1,
+  "collapsed": false,
+  "folders": {},
+  "intents": {
+    "ALL": true
+  }
+}
